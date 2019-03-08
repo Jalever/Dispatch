@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+    <script src="jquery-1.8.0.js"></script>
+</head>
+<body id="body" style="overflow:hidden;+overflow:none;_overflow:none;padding:0 17px 0 0;">
+<div id="shell">
+    <div id="top">
+        <div id="buttonBack" onclick="clickBack()"><!--javascript-->
+            <img src="images/icon_back.png">
+            <a href="#">返回</a>
+        </div>
+    </div>
+    <div id="Title">
+        <div id="Title_p">
+            修改表格界面
+        </div>
+    </div>
+    <div id="content">
+        <div id="content_table">
+            <form method="post">
+                <table>
+                    <tr id="table1">
+                        <td>学号</td>
+                        <td>姓名<div class="table1_c"></td>
+                        <td>手机号码<div class="table1_c"></td>
+                        <td>家长姓名<div class="table1_c"></td>
+                        <td>家长手机号码<div class="table1_c"></td>
+                        <td>家庭住址<div class="table1_c"></td>
+                        <td>邮编<div class="table1_c"></td>
+                        <td><span style="color:#fff;">删除</span><div class="table1_c"></td>
+                    </tr>
+                    <tr>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                        <td><div class="hou"></div></td>
+                    </tr>
+                    <tr id="tableM">
+                        <td><input type="text" name="identified" id="identified" value="201430098135" class="clearBorder"></td>
+                        <td><input type="text" name="name" id="name" value="常凯申1" class="clearBorder2"></td>
+                        <td><input type="text" name="phoneNum" id="phoneNum" value="13576676698" class="clearBorder4"></td>
+                        <td><input type="text" name="parentName" id="parentName" value="李德胜" class="clearBorder2"></td>
+                        <td><input type="text" name="parentNum" id="parentNum" value="13579979954" class="clearBorder4"></td>
+                        <td><input type="text" name="address" id="address" value="广西壮族自治区柳州市柳南区城站路183-27公安处宿舍" class="clearAddress"></td>
+                        <td><input type="text" name="zipCode" id="zipCode" value="545007" class="clearBorder3"></td>
+                        <td id="dltTd1"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt1" onmouseover="deleteMe1()" onmouseout="deleteMeR1()" onclick="trDeleteM()">删除</a></td>
+                    </tr>
+                    <tr id="table2">
+                        <td><input type="text" name="identified" value="201430098135" class="clearBorder"></td>
+                        <td><input type="text" name="name" value="常凯申2" class="clearBorder2"></td>
+                        <td><input type="text" name="phoneNum" value="13576676698" class="clearBorder4"></td>
+                        <td><input type="text" name="parentName" value="李德胜" class="clearBorder2"></td>
+                        <td><input type="text" name="parentNum" value="13579979954" class="clearBorder4"></td>
+                        <td><input type="text" name="address" value="广西壮族自治区柳州市柳南区城站路183-27公安处宿舍" class="clearAddress"></td>
+                        <td><input type="text" name="zipCode" value="545007" class="clearBorder3"></td>
+                        <td id="dltTd2"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt2" onmouseover="deleteMe2()" onmouseout="deleteMeR2()" onclick="trDelete2()">删除</a></td>
+                    </tr>
+                    <tr id="table3">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd3"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt3" onmouseover="deleteMe3()" onmouseout="deleteMeR3()" onclick="trDelete3()">删除</a></td>
+                    </tr>
+                    <tr id="table4">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd4"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt4" onmouseover="deleteMe4()" onmouseout="deleteMeR4()" onclick="trDelete4()">删除</a></td>
+                    </tr>
+                    <tr id="table5">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd5"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt5" onmouseover="deleteMe5()" onmouseout="deleteMeR5()" onclick="trDelete5()">删除</a></td>
+                    </tr>
+                    <tr id="table6">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd6"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt6" onmouseover="deleteMe6()" onmouseout="deleteMeR6()" onclick="trDelete6()">删除</a></td>
+                    </tr>
+                    <tr id="table7">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd7"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt7" onmouseover="deleteMe7()" onmouseout="deleteMeR7()" onclick="trDelete7()">删除</a></td>
+                    </tr>
+                    <tr id="table8">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd8"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt8" onmouseover="deleteMe8()" onmouseout="deleteMeR8()" onclick="trDelete8()">删除</a></td>
+                    </tr>
+                    <tr id="table9">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTd9"><a style="font-size: 14px;color: #000;cursor: pointer;" id="delt9" onmouseover="deleteMe9()" onmouseout="deleteMeR9()" onclick="trDelete9()">删除</a></td>
+                    </tr>
+                    <tr id="tablex">
+                        <td><input type="text" value="" class="clearBorder"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearBorder2"></td>
+                        <td><input type="text" value="" class="clearBorder4"></td>
+                        <td><input type="text" value="" class="clearAddress"></td>
+                        <td><input type="text" value="" class="clearBorder3"></td>
+                        <td id="dltTdx"><a style="font-size: 14px;color: #000;cursor: pointer;" id="deltX" onmouseover="deleteMeX()" onmouseout="deleteMeRX()" onclick="trDeletex()">删除</a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="content_foot">
+            <div id="pageBottom">
+                <div id="pageLeft" style="font-size: 13px;">
+                    第<span id="pageNum">1</span>页
+                    共<span id="totalPage">11</span>页
+                    (共<span>1</span>条)
+                </div>
+                <div id="pageRight" style="font-size: 13px;">
+                    <div id="pageButton1" style="width:33px;height: 100%;float: left;" onclick="leftmost()">
+                        <img src="images/icon_leftmost.png" id="leftImg1" style="display: block;margin-top:5px;"/>
+                    </div>
+                    <div id="pageButton2" style="width:22px;height: 100%;float: left;" onclick="left()">
+                        <img src="images/icon_letf.png" id="leftImg2" style="display: block;margin-top:5px;">
+                    </div>
+                    <div id="pageButton3" style="width:45px;height: 100%;float: left;">
+                        <input type="text" style="width:29px;border:1px solid #ff6765;background-color:#fff;display: block;text-align: center;" value="1" id="currentPage">
+                    </div>
+                    <div id="pageButton4" style="width:36px;height: 100%;float: left;" onclick="right()">
+                        <img src="images/icon_right.png" id="rightImg1" style="margin-top:5px;display: block;">
+                    </div>
+                    <div id="pageButton5" style="width: 14px;height: 100%;float:left;" onclick="rightmost()">
+                        <img src="images/icon_rightmost.png" id="rightImg2" style="margin-top:5px;display: block;" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myButton">
+        <div id="myButton_img" onmouseover="buttonB()" onmouseout="buttonA()" onclick="buttonSave()">
+            <img src="images/SaveB1.png" id="myImg">
+            <div id="myButton_span">
+                <span id="myChar" style="text-align: center;">保存</span>
+            </div>
+        </div>
+    </div>
+    <div id="popupWindow">
+        <div id="shade">
+        </div>
+        <div id="layer1">
+            <div id="layer2">
+                <div id="layer1_top" style="cursor: default;">
+                    <p>修改成功</p>
+                </div>
+                <div id="layer1_bottom" style="position:relative;">
+                    <div id="layer_confirm" onmouseover="changeConfirmButton()" onmouseout="changeConfirmButton2()" onclick="clearShade()" style="cursor:pointer;">
+                        <div id="l1b_img" style="float:left;">
+                            <img src="images/SaveB.png" id="layer1_bottom_img">
+                        </div>
+                        <div id="l1b_p" style="float:left;">
+                            <p id="l1b_p1" style="position: absolute;left: 285px;top:4px;cursor:pointer;">确定</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="Javascript.js"></script>
+</body>
+</html>

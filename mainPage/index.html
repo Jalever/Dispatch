@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styleSheet.css" type="text/css">
+</head>
+<body class="page">
+    <div class="header_content" style="background:#ff6765;">
+        <img src="img/top_left.png" class="h58 w220"/>
+
+        <div class="header_contentl">
+            <img src="img/pic_mail.png" class="fl"/>
+            <div class="ml12 mt8 while f12 fl">
+                <div>学生成绩</div>
+                <div class="ml36">短信发送系统</div>
+            </div>
+        </div>
+
+        <div class="header_contentr">
+            <div class="pr exit fr" id="goback">
+                <img src="img/icon_exit.png" style="position:relative;top:4px;"/>
+                <span class="f18  grey mt2">退出</span>
+            </div>
+            <div class="while fr header_teacher f16">
+                <span style="color:#593c3b;">xxx</span>老师，欢迎您回来
+            </div>
+        </div>
+    </div>
+    <div style="min-width: 1000px;position: relative;" >
+    <div class="content_left fl"><!--   height: 570px; -->
+        <div class="pr button" onmouseover="changeColor1()" onmouseout="killColor1()" onclick="clickOne()" style="cursor:pointer;">
+            <input type="file" value="onlyone" class="choose" style="width:200px;cursor:pointer;"/>
+            <div class="choose_write" id="choose_write1" style="cursor:pointer;">导入学生家庭信息表</div>
+        </div>
+        <div class="pr button" onmouseover="changeColor2()" onmouseout="killColor2()" onclick="clickTwo()" style="cursor:pointer;">
+            <input type="file" value="onlytwo" class="choose" style="width:200px;cursor:pointer;"/>
+            <div class="choose_write" id="choose_write2" style="cursor:pointer;">导入学生成绩信息表</div>
+        </div>
+        <div class="pr button" onmouseover="changeColor3()" onmouseout="killColor3()" style="color:#0099cb;cursor:pointer;">
+            <input type="button" value="onlythree" class="choose" style="width:200px;cursor:pointer;"/>
+                <div class="choose_write f16" id="revise" style="cursor:pointer;">修改</div>
+        </div>
+    </div>
+    <div class="content_right fl">
+        <div class="content" id="context"><!--width:1000px;height:450px;-->
+            <div class="uninput" style="display: block;" id="uninput">
+                <div class="f34" style="height: 34px;">尚未导入表格</div>
+                <div class="mt20 f25 small">请在左边导入所需表格</div>
+            </div>
+            <div style="display: none;" id="infoFamily">
+                <div id="content_table">
+                    <form method="post">
+                        <table>
+                            <tr id="table1">
+                                <td>学号</td>
+                                <td>姓名<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>手机号码<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家长姓名<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家长手机号码<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家庭住址<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>邮编<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                            </tr>
+                            <tr id="tableM">
+                                <td><input type="text" name="identified" id="identified" value="201430098135" class="clearBorder"></td>
+                                <td><input type="text" name="name" id="name" value="常凯申1" class="clearBorder2"></td>
+                                <td><input type="text" name="phoneNum" id="phoneNum" value="13576676698" class="clearBorder4"></td>
+                                <td><input type="text" name="parentName" id="parentName" value="李德胜" class="clearBorder2"></td>
+                                <td><input type="text" name="parentNum" id="parentNum" value="13579979954" class="clearBorder4"></td>
+                                <td><input type="text" name="address" id="address" value="广西壮族自治区柳州市柳南区城站路183-27公安处宿舍" class="clearAddress"></td>
+                                <td><input type="text" name="zipCode" id="zipCode" value="545007" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table2">
+                                <td><input type="text" name="identified" value="201430098135" class="clearBorder"></td>
+                                <td><input type="text" name="name" value="常凯申2" class="clearBorder2"></td>
+                                <td><input type="text" name="phoneNum" value="13576676698" class="clearBorder4"></td>
+                                <td><input type="text" name="parentName" value="李德胜" class="clearBorder2"></td>
+                                <td><input type="text" name="parentNum" value="13579979954" class="clearBorder4"></td>
+                                <td><input type="text" name="address" value="广西壮族自治区柳州市柳南区城站路183-27公安处宿舍" class="clearAddress"></td>
+                                <td><input type="text" name="zipCode" value="545007" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table3">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table4">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table5">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table6">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table7">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table8">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="table9">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                            <tr id="tablex">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                                <td><input type="text" value="" class="clearAddress"></td>
+                                <td><input type="text" value="" class="clearBorder3"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="content_foot">
+                    <div id="pageBottom">
+                        <div id="pageLeft" style="font-size: 13px;color:#000;">
+                            第<span id="pageNum">1</span>页
+                            共<span id="totalPage">11</span>页
+                            (共<span>1</span>条)
+                        </div>
+                        <div id="pageRight" style="font-size: 13px;">
+                            <div id="pageButton1" style="width:33px;height: 100%;float: left;" onclick="leftmost()">
+                                <img src="img/icon_leftmost.png" id="leftImg1" style="display: block;margin-top:5px;"/>
+                            </div>
+                            <div id="pageButton2" style="width:22px;height: 100%;float: left;" onclick="left()">
+                                <img src="img/icon_left.png" id="leftImg2" style="display: block;margin-top:5px;">
+                            </div>
+                            <div id="pageButton3" style="width:45px;height: 100%;float: left;">
+                                <input type="text" style="width:29px;border:1px solid #ff6765;background-color:#fff;display: block;text-align: center;" value="1" id="currentPage">
+                            </div>
+                            <div id="pageButton4" style="width:36px;height: 100%;float: left;" onclick="right()">
+                                <img src="img/icon_right.png" id="rightImg1" style="margin-top:5px;display: block;">
+                            </div>
+                            <div id="pageButton5" style="width: 14px;height: 100%;float:left;" onclick="rightmost()">
+                                <img src="img/icon_rightmost.png" id="rightImg2" style="margin-top:5px;display: block;" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div style="display: none;" id="infoScore">
+                <div id="content_tableq">
+                    <form method="post">
+                        <table>
+                            <tr id="table1q">
+                                <td style="width:143px;">学号</td>
+                                <td style="width:87px;">姓名<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>各科成绩<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                            </tr>
+                            <tr id="tableMq">
+                                <td><input type="text" name="identified" id="identifiedq" value="201430098135" class="clearBorder"></td>
+                                <td><input type="text" name="name" id="nameq" value="常凯申1" class="clearBorder2"></td>
+                                <td><input type="text" name="phoneNum" id="phoneNumq" value="13576676698" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table2q">
+                                <td><input type="text" name="identified" value="201430098135" class="clearBorder"></td>
+                                <td><input type="text" name="name" value="常凯申2" class="clearBorder2"></td>
+                                <td><input type="text" name="phoneNum" value="13576676698" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table3q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table4q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table5q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table6q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table7q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table8q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="table9q">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                            <tr id="tablexq">
+                                <td><input type="text" value="" class="clearBorder"></td>
+                                <td><input type="text" value="" class="clearBorder2"></td>
+                                <td><input type="text" value="" class="clearBorder4"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="content_footq">
+                    <div id="pageBottomq">
+                        <div id="pageLeftq" style="font-size: 13px;color:#000;">
+                            第<span id="pageNumq">1</span>页
+                            共<span id="totalPageq">11</span>页
+                            (共<span>1</span>条)
+                        </div>
+                        <div id="pageRightq" style="font-size: 13px;">
+                            <div id="pageButton1q" class="yui" style="width:33px;height: 100%;float: left;" onclick="leftmostq()">
+                                <img src="img/icon_leftmost.png" id="leftImg1q" style="display: block;margin-top:5px;"/>
+                            </div>
+                            <div id="pageButton2q" class="yui" style="width:22px;height: 100%;float: left;" onclick="leftq()">
+                                <img src="img/icon_left.png" id="leftImg2q" style="display: block;margin-top:5px;">
+                            </div>
+                            <div id="pageButton3q" style="width:45px;height: 100%;float: left;">
+                                <input type="text" style="width:29px;border:1px solid #ff6765;background-color:#fff;display: block;text-align: center;" value="1" id="currentPageq">
+                            </div>
+                            <div id="pageButton4q" class="yui" style="width:36px;height: 100%;float: left;" onclick="rightq()">
+                                <img src="img/icon_right.png" id="rightImg1q" style="margin-top:5px;display: block;">
+                            </div>
+                            <div id="pageButton5q" class="yui" style="width: 14px;height: 100%;float:left;" onclick="rightmostq()">
+                                <img src="img/icon_rightmost.png" id="rightImg2q" style="margin-top:5px;display: block;" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!-- landmark2-->
+        </div>
+    </div>
+</div><!--the window which is front of shade-->
+    <div id="shade" style="display: block;">
+
+    </div>
+    <div id="popupWindow" style="display:block;width:900px;">
+        <div id="pwc_top">
+            <div id="pwct_left">
+                <a style="color:#666;font-size:14px;position: relative;
+                left:27px;top:14px;">以下学生的家庭信息表与成绩表的信息存在冲突</a>
+            </div>
+            <div id="pwct_center">
+                <img src="img/icon_error.png" style="position:relative;top:25px;cursor: pointer;width: 14px;" id="iconError" onclick="killShade()" >
+            </div>
+        </div>
+        <div id="pW_center">
+            <div id="pwc_middle">
+                <div id="content_tablec">
+                    <form method="post">
+                        <table id="shadeTable">
+                            <tr id="table1c">
+                                <td>学号</td>
+                                <td>姓名<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>手机号码<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家长姓名<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家长手机号码<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>家庭住址<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                                <td>邮编<div style="width:3px;height: 15px;background: #ff6765;float: left;margin-top: 23px;"></div></td>
+                            </tr>
+                            <tr id="tableMc" style="background: #ffbcb9;">
+                                <td id="td1">201430098135</td>
+                                <td id="td2">江xx</td>
+                                <td id="td3">188xxxxxxxxx</td>
+                                <td id="td4">xxxx</td>
+                                <td id="td5">150xxxxxxxx</td>
+                                <td id="td6">M78星云</td>
+                                <td id="td7">5454545</td>
+                            </tr>
+                            <tr id="table2c">
+                                <td id="td11"></td>
+                                <td id="td12"></td>
+                                <td id="td13"></td>
+                                <td id="td14"></td>
+                                <td id="td15"></td>
+                                <td id="td16"></td>
+                                <td id="td17"></td>
+                            </tr>
+                            <tr id="table3c">
+                                <td id="td21"></td>
+                                <td id="td22"></td>
+                                <td id="td23"></td>
+                                <td id="td24"></td>
+                                <td id="td25"></td>
+                                <td id="td26"></td>
+                                <td id="td27"></td>
+                            </tr>
+                            <tr id="table4c">
+                                <td id="td31"></td>
+                                <td id="td32"></td>
+                                <td id="td33"></td>
+                                <td id="td34"></td>
+                                <td id="td35"></td>
+                                <td id="td36"></td>
+                                <td id="td37"></td>
+                            </tr>
+                            <tr id="table5c">
+                                <td id="td41"></td>
+                                <td id="td42"></td>
+                                <td id="td43"></td>
+                                <td id="td44"></td>
+                                <td id="td45"></td>
+                                <td id="td46"></td>
+                                <td id="td47"></td>
+                            </tr>
+                            <tr id="table6c">
+                                <td id="td51"></td>
+                                <td id="td52"></td>
+                                <td id="td53"></td>
+                                <td id="td54"></td>
+                                <td id="td55"></td>
+                                <td id="td56"></td>
+                                <td id="td57"></td>
+                            </tr>
+                            <tr id="table7c">
+                                <td id="td61"></td>
+                                <td id="td62"></td>
+                                <td id="td63"></td>
+                                <td id="td64"></td>
+                                <td id="td65"></td>
+                                <td id="td66"></td>
+                                <td id="td67"></td>
+                            </tr>
+                            <tr id="table8c">
+                                <td id="td71"></td>
+                                <td id="td72"></td>
+                                <td id="td73"></td>
+                                <td id="td74"></td>
+                                <td id="td75"></td>
+                                <td id="td76"></td>
+                                <td id="td77"></td>
+                            </tr>
+                            <tr id="table9c">
+                                <td id="td81"></td>
+                                <td id="td82"></td>
+                                <td id="td83"></td>
+                                <td id="td84"></td>
+                                <td id="td85"></td>
+                                <td id="td86"></td>
+                                <td id="td87"></td>
+                            </tr>
+                            <tr id="tablexc">
+                                <td id="td91"></td>
+                                <td id="td92"></td>
+                                <td id="td93"></td>
+                                <td id="td94"></td>
+                                <td id="td95"></td>
+                                <td id="td96"></td>
+                                <td id="td97"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div id="content_footc">
+                        <div id="pageBottomc">
+                            <div id="pageLeftc" style="font-size: 13px;color:#000;">
+                                第<span id="pageNumc">1</span>页
+                                共<span id="totalPagec">11</span>页
+                                (共<span>1</span>条)
+                            </div>
+                            <div id="pageRightc" style="font-size: 13px;">
+                                <div id="pageButton1c" style="width:33px;height: 100%;float: left;" onclick="leftmostc()">
+                                    <img src="img/icon_leftmost.png" class="yui" id="leftImg1c" style="display: block;margin-top:5px;"/>
+                                </div>
+                                <div id="pageButton2c" style="width:22px;height: 100%;float: left;" onclick="leftc()">
+                                    <img src="img/icon_left.png" class="yui" id="leftImg2c" style="display: block;margin-top:5px;">
+                                </div>
+                                <div id="pageButton3c" style="width:45px;height: 100%;float: left;">
+                                    <input type="text" style="width:29px;border:1px solid #ff6765;background-color:#fff;display: block;text-align: center;" value="1" id="currentPagec">
+                                </div>
+                                <div id="pageButton4c" style="width:36px;height: 100%;float: left;" onclick="rightc()">
+                                    <img src="img/icon_right.png" class="yui" id="rightImg1c" style="margin-top:5px;display: block;">
+                                </div>
+                                <div id="pageButton5c" style="width: 14px;height: 100%;float:left;" onclick="rightmostc()">
+                                    <img src="img/icon_rightmost.png" class="yui" id="rightImg2c" style="margin-top:5px;display: block;" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pwc_bottom">
+                <div id="pwcb_top" style="width:100%;height: 50px;">
+                </div>
+                <div id="pwcb_bottom">
+                    <div id="beBack1" onmousedown="changeUi()" onmouseup="changeUii()" onclick="killShade()">
+                        <img src="img/returnB.png" id="returnB" class="yui"  >
+                        <a style="color: #ff6765;font-size: 18px;position:relative;top:-45px;left:55px;" id="re" class="yui">返回修改之前信息</a>
+                    </div>
+                    <div id="beBack2" onmousedown="changeMi()" onmouseup="changeMii()">
+                        <img src="img/IgnoreB.png" id="IgnoreB" class="yui">
+                        <a style="color: #ff6765;font-size: 18px;position:relative;top:-45px;left:55px;" id="bl" class="yui">忽略不符信息</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="Javascript.js"></script>
+</body>
+</html>

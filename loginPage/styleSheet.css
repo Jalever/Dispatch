@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#shell{
+
+}
+#body{
+    background: #b6ddff;
+}
+/************************************************content***************************************************************/
+#content{
+    width: 800px;
+    height: 420px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 140px;
+    background: #FFF;
+
+    /*position: relative;
+    top: 140px;
+    left: 300px;*/
+}
+/************************************************content_top***********************************************************/
+#top{
+    width: 100%;/*width:800px;*/
+    height: 45px;
+}
+/********************content_top_iconBack****************************/
+#iconBack{
+    width: 70px;
+    height: 25px;
+    position: relative;
+    top: 23px;
+    left: 33px;
+}
+/*content_top_iconBack_left*/
+#iconBack_left{
+    width: 25px;
+    height: 100%;/*height:20px;*/
+    float: left;
+    position: relative;
+    top: 2px;
+    background-image: url(images/icon_back.png);
+    background-repeat: no-repeat;
+
+}
+/*content_top_iconBack_right*/
+#iconBack_right{
+    width: 45px;
+    height:100%;/*height:20px;*/
+    float: left;
+}
+/*content_top_iconBack_right_a*/
+#iconBack_right a{
+    font-size: 18px;
+    color: #676767;
+    font-family: "microsoft Yahei";
+}
+/***************************************************content_bottom*****************************************************/
+.text_login {
+    cursor: default;
+}
+#bottom{
+    width: 100%;/*width:800px;*/
+    height: 375px;
+}
+/*content_bottom_login*/
+#bottom_login{
+    width: 100%;/*width:800px;*/
+    height: 45px;
+}
+/*content_bottom_login_a*/
+#bottom_login_a{
+    width: 200px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bottom_login_a a{
+    font-size: 40px;
+    color: #676767;
+    text-align: center;
+}
+/*content_bottom_one*/
+#bottom_one{
+    width: 100%;/*width:800px;*/
+    height: 330px;
+}
+/*content_bottom_one_content*/
+#bottom_one_content{
+    width: 470px;
+    height: 330px;
+    margin-left: 250px;
+}
+/*content_bottom_one_content_left*/
+#btc_left{
+    width: 300px;
+    height: 100%;/*height: 330px;*/
+    float: left;
+}
+/*content_bottom_one_content_left_one*/
+#btcl_one{
+    width: 100%;/*width: 300px;*/
+    height: 72px;
+    border-bottom: 3px solid #ff6765;
+}
+/*content_bottom_one_content_left_one_account*/
+#btclo_account{
+    width: 250px;
+    height: 25px;
+    position: relative;
+    left: 50px;
+    top: 47px;
+}
+#btcloa_img{
+    width: 25px;
+    height: 100%;/*height: 25px;*/
+    float: left;
+}
+#btcloa_textAccount{
+    width: 210px;
+    height: 100%;/*height: 25px;*/
+    float: right;
+}
+#textAccount{
+    border-style: none;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    color: #fcb4b1;
+    outline: 0;
+    border: 0;
+    background: #fff;
+}
+/*content_bottom_one_content_left_two*/
+#btcl_two{
+    width: 100%;
+    height: 82px;
+    border-bottom: 3px solid #ff6765;
+}
+/*content_bottom_one_content_left_two_password*/
+#btclt_password{
+    width: 250px;
+    height: 25px;
+    position: relative;
+    left: 50px;
+    top: 57px;
+}
+#btcltp_img{
+    width: 25px;
+    height: 100%;
+    float: left;
+}
+#btcltp_textPasswd{
+    width: 210px;
+    height: 100%;
+    float: right;
+}
+#textPasswd{
+    border-style: none;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    color: #fcb4b1;
+    outline: 0;
+    border: 0;
+    word-spacing: inherit;
+    background: #fff;
+}
+/*content_bottom_one_content_left_three*/
+#btcl_three{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+/*#btclt_login{
+    width: 244px;
+    height: 44px;
+    border: 3px solid #fe6765;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 69px;
+    left: 27px;
+}
+#btclt_login a{
+    color: #fe6765;
+    font-size: 23px;
+    position: relative;
+    top: 13px;
+    left: 93px;
+    letter-spacing: 10px;
+}*/
+#btclt_img{
+    position: relative;
+    top: 69px;
+    left: 27px;
+    z-index: 10;
+    cursor: pointer;
+}
+#btclt_a{
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    left: 122px;
+    color: #ff6765;
+    font-size: 20px;
+    font-family: "microsoft yahei";
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+/*content_bottom_one_content_right*/
+#btc_right{
+    width: 170px;
+    height: 100%;/*height: 330px;*/
+    float: left;
+}
+#isntAccount{
+    width: 140px;
+    height: 73px;
+    float: right;
+}
+#iA_shell{
+    width: 100%;/*width: 140px;*/
+    height: 24px;
+    position: relative;
+    top: 48px;
+}
+#ias_img{
+    width: 32px;
+    height: 100%;/*height: 24px;*/
+    float: left;
+}
+#ias_text{
+    width: 106px;
+    height: 100%;/*height: 24px;*/
+    float: left;
+}
+#ias_text a{
+    color: #ff6765;
+    font-size: 17px;
+    font-family: "microsoft yahei";
+}
+#errorPasswd{
+    width: 140px;
+    height: 84px;
+    float: right;
+}
+#eP_shell{
+    width: 100%;/*width: 140px;*/
+    height: 24px;
+    position: relative;
+    top: 59px;
+}
+#eps_img{
+    width: 32px;
+    height: 100%;/*height: 24px;*/
+    float: left;
+}
+#eps_text{
+    width: 106px;
+    height: 100%;/*height: 24px;*/
+    float: left;
+}
+#eps_text a{
+    color: #ff6765;
+    font-size: 17px;
+    font-family: "microsoft yahei";
+}

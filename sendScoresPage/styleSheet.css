@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "microsoft yahei";
+}
+#shell{}
+#top{
+    width:100%;
+    height: 50px;
+    background: #ff6765;
+}
+#div_back{
+    width: 60px;
+    height: 100%;/*width:50px;*/
+    background: #ff6765;
+    margin-left:18px;
+    cursor:pointer;
+}
+#div_back_left{
+    width:22px;
+    height: 100%;/*width:50px;*/
+    float: left;
+}
+.div_back_imga{
+    position: relative;
+    top: 14px;
+}
+#div_back_a{
+    color:#666;
+    font-size:19px;
+}
+#div_back_right{
+    width:38px;
+    height: 100%;/*width:50px;*/
+    float: left;
+}
+#tdown{
+    width:100%;
+    height: 50px;
+}
+#content{
+    width:1260px;
+    height: 500px;
+    margin:0 auto;
+}
+#content_left{
+    width: 500px;
+    height: 100%;/*height:500px;*/
+    float: left;
+}
+#content_left_preview{
+    width: 380px;
+    height: 480px;
+    border:10px solid #ff6765;
+}
+#clp_content{
+    width:275px;
+    height: 100%;
+    margin:0 auto;
+}
+
+#clpc_top{
+    width:100%;
+    height: 40px;
+}
+#clpc_title{
+    width:145px;
+    height: 20px;
+    margin:0 auto;
+    cursor: default;
+}
+#clpc_block{
+    width:100%;
+    height: 50px;
+}
+#clpc_middle{
+    width:100%;
+    height: 40px;
+    font-size:14px;
+    cursor: default;
+}
+#clpc_bottom{
+    width:100%;
+    height: 330px;
+    font-size: 14px;
+}
+.end{
+    padding-left: 40px;
+}
+.chageLine{
+    line-height: 20px;
+    cursor:default;
+}
+#content_right{
+    width:760px;
+    height: 100%;/*height:500px;*/
+    float: left;
+}
+#content_right_top{
+    width:100%;/*width:760px;*/
+    height:385px;
+}
+table{
+    width:760px;
+}
+table,td{
+    border-collapse: collapse;
+    line-height: 30px;
+}
+#crt_trow td{
+    width:100px;
+    height: 35px;
+    border-bottom:15px solid #ff6765;
+}
+.crtt_d{
+    width:3px;
+    height: 15px;
+    background: #ff6765;
+    color:#ff6765;
+    margin-top:23px;
+}
+#crt_tr1,#crt_tr2,#crt_tr3,#crt_tr4,#crt_tr5,#crt_tr6,#crt_tr7,#crt_tr8,#crt_tr9,#crt_trx > td{
+    border-bottom: 2px solid #ff6765;
+    line-height: 20px;
+    background: #fff;
+}
+#allCheck{
+    color: #878787;
+    font-size: 12px;
+    position: relative;
+    top:2px;
+    cursor:default;
+    left:8px;
+}
+.tdWidth{
+    margin-left: 20px;
+}
+#input_all{
+    float: right;
+}
+.infoR{
+    margin-left:20px;
+}
+#content_right_down{
+    width:100%;/*width:760px;*/
+    height:115px;
+}
+#crm_left{
+    width:200px;
+    height: 42px;
+    float: left;
+    cursor:pointer;
+}
+#crm_right{
+    width:200px;
+    height: 42px;
+    float: right;
+    cursor:pointer;
+}
+#confirmW{
+    position:relative;
+    top:-35px;
+    left:80px;
+}
+#confirmS{
+    position:relative;
+    top:-35px;
+    left:70px;
+}
+#clpcb_table > td{
+    border:1px solid #ff6765;
+}
+#shade{
+    background-color:#000;
+    position:absolute;
+    z-index:49;
+    display:none;
+    width:100%;
+    height:100%;
+    opacity:0.6;
+    filter: alpha(opacity=45);
+    -moz-opacity: 0.6;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#popupWindow{
+    width:380px;
+    height: 210px;
+    background: #f3f3f3;
+    border:20px solid #fff;
+    display: none;
+    position: relative;
+    top:-455px;
+    margin-left:auto;
+    margin-right:auto;
+    z-index: 55;
+}
+#pWindowCenter{
+    width:155px;
+    height: 100%;/*height:210px;*/
+    margin:0 auto;
+}
+#pwc_top{
+    width:100%;
+    height: 90px;
+    cursor:default;
+
+}
+#pwct_a{
+    position: relative;
+    top:40px;
+    left:43px;
+}
+#pwc_center{
+    width:100%;
+    height: 50px;
+    cursor:default;
+}
+#pwc_bottom{
+    width:100%;
+    height: 70px;
+}
+#td1,#td3{
+    background: #ffbcb5;
+}

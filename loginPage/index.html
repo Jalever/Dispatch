@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>tentcooTask04</title>
+    <link href="styleSheet.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.8.0.js" type="text/javascript"></script>
+</head>
+<body id="body">
+<div id="shell">
+    <div id="content">
+        <div id="top">
+            <div id="iconBack">
+                <div id="iconBack_left">
+
+                </div>
+                <div id="iconBack_right">
+                    <a href="#">返回</a>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="bottom_login">
+                <div id="bottom_login_a">
+                    <a class="text_login">管理员登录</a>
+                </div>
+            </div>
+            <div id="bottom_one">
+                <div id="bottom_one_content">
+                    <div id="btc_left">
+                        <div id="btcl_one">
+                            <div id="btclo_account">
+                                <div id="btcloa_img">
+                                    <img src="images/icon_username.png">
+                                </div>
+                                <div id="btcloa_textAccount">
+                                    <form>
+                                        <input type="text" value="请输入用户名" name="textAccount" id="textAccount" maxlength="12" 
+                                               onfocus="if(value=='请输入用户名'){value=''}" onblur="if(value==''){value='请输入用户名'};clearDispl()" style="width: 210px;height: 23px;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="btcl_two">
+                            <div id="btclt_password">
+                                <div id="btcltp_img">
+                                    <img src="images/icon_pwd.png">
+                                </div>
+                                <div id="btcltp_textPasswd">
+                                    <form>
+                                        <input type="password" value="请输入密码"  name="textPasswd" id="textPasswd" maxlength="12" 
+                                               onfocus="if(value=='请输入密码'){value=''}" onblur="if(value==''){value='请输入密码'};clearDispl2()" style="width: 210px;height: 21px;" onkeydown="clickEnter()">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="btcl_three">
+                            <div id="btcl_clickyou">
+                                <div id="btclt_login">
+                                    <img src="images/loginB.png" id="btclt_img" onmousedown="changeImgOn()" onmouseup="changeImgOut()" onclick="check()">
+                                </div>
+                                <div id="btclt_a" onmousedown="changeImgOn()" onmouseup="changeImgOut()" onclick="check()"> 登录
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btc_right">
+                        <div id="isntAccount">
+                            <div id="iA_shell" style="display: none;">
+                                <div id="ias_img">
+                                    <img src="images/icon_error.png">
+                                </div>
+                                <div id="ias_text">
+                                    <a>用户名不存在</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="errorPasswd">
+                            <div id="eP_shell"  style="display: none;">
+                                <div id="eps_img">
+                                    <img src="images/icon_error.png">
+                                </div>
+                                <div id="eps_text">
+                                    <a>密码错误</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>

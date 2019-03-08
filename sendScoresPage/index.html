@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>短信预览界面</title>
+    <link rel="stylesheet" href="styleSheet.css" type="text/css">
+</head>
+<body>
+<div id="shell">
+    <div id="top" style="background:#ff6765;width:100%;" >
+        <div id="div_back">
+            <div id="div_back_left">
+                <img src="images/icon_back.png" class="div_back_imga">
+            </div>
+            <div id="div_back_right">
+                <a class="div_back_imga" id="div_back_a">返回</a>
+            </div>
+        </div>
+    </div>
+    <div id="tdown"></div>
+    <div id="content">
+        <div id="content_left">
+            <div id="content_left_preview">
+                <div id="clp_content">
+                    <div id="clpc_top">
+
+                    </div>
+                    <div id="clpc_title">
+                        <a>短信预览发送效果</a>
+                    </div>
+                    <div id="clpc_block"></div>
+                    <div id="clpc_middle">
+                        <div>家长,您好!本学期<a id="studentName">XXX</a>同学期末成绩如下:</div>
+                    </div>
+                    <div id="clpc_bottom">
+                        <table>
+                            <tr>
+                                <td class="chageLine"><span id="subject1">高等数学<a class="end">89</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject2">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject3">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject1">高等数学<a class="end">89</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject2">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject3">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject1">高等数学<a class="end">89</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject2">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject3">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject1">高等数学<a class="end">89</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject2">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="chageLine"><span id="subject3">大学英语<a class="end">87</a></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_right">
+            <div id="content_right_top">
+                <form>
+                    <table id="crt_table">
+                        <tr id="crt_trow">
+                            <td></td>
+                            <td><div class="crtt_d"></div></td>
+                            <td><div class="crtt_d"></div></td>
+                            <td><div class="crtt_d"></div></td>
+                            <td><div class="crtt_d"></div></td>
+                            <td><div class="crtt_d"></div></td>
+                            <td><div class="crtt_d" style="float:left;"></div><div style="float:left;"><input type="checkbox" onclick="toggle(this)" style="margin-left: 53px;position:relative;top:4px;"><a id="allCheck">全选</a></div></td>
+                        </tr>
+                        <tr id="crt_tr1">
+                            <td id="td1">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR1" class="infoR">xxx</a>
+                            </td>
+                            <td id="td2">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR2" class="infoR">yyy</a>
+                            </td>
+                            <td id="td3">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR3" class="infoR">zzz</a>
+                            </td>
+                            <td id="td4">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR4" class="infoR"></a>
+                            </td>
+                            <td id="td5">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR5" class="infoR"></a>
+                            </td>
+                            <td id="td6">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR6" class="infoR"></a>
+                            </td>
+                            <td id="td7">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR7" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr2">
+                            <td id="td8">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR8" class="infoR"></a>
+                            </td>
+                            <td id="td9">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR9" class="infoR"></a>
+                            </td>
+                            <td id="td10">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR10" class="infoR"></a>
+                            </td>
+                            <td id="td11">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR11" class="infoR"></a>
+                            </td>
+                            <td id="td12">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR12" class="infoR"></a>
+                            </td>
+                            <td id="td13">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR13" class="infoR"></a>
+                            </td>
+                            <td id="td14">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR14" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr3">
+                            <td id="td15">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR15" class="infoR"></a>
+                            </td>
+                            <td id="td16">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR16" class="infoR"></a>
+                            </td>
+                            <td id="td17">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR17" class="infoR"></a>
+                            </td>
+                            <td id="td18">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR18" class="infoR"></a>
+                            </td>
+                            <td id="td19">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR19" class="infoR"></a>
+                            </td>
+                            <td id="td20">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR20" class="infoR"></a>
+                            </td>
+                            <td id="td21">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR21" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr4">
+                            <td id="td22">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR22" class="infoR"></a>
+                            </td>
+                            <td id="td23">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR23" class="infoR"></a>
+                            </td>
+                            <td id="td24">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR24" class="infoR"></a>
+                            </td>
+                            <td id="td25">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR25" class="infoR"></a>
+                            </td>
+                            <td id="td26">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR26" class="infoR"></a>
+                            </td>
+                            <td id="td27">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR27" class="infoR"></a>
+                            </td>
+                            <td id="td28">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR28" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr5">
+                            <td id="td29">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR29" class="infoR"></a>
+                            </td>
+                            <td id="td30">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR30" class="infoR"></a>
+                            </td>
+                            <td id="td31">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR31" class="infoR"></a>
+                            </td>
+                            <td id="td32">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR32" class="infoR"></a>
+                            </td>
+                            <td id="td33">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR33" class="infoR"></a>
+                            </td>
+                            <td id="td34">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR34" class="infoR"></a>
+                            </td>
+                            <td id="td35">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR35" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr6">
+                            <td id="td36">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR36" class="infoR"></a>
+                            </td>
+                            <td id="td37">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR37" class="infoR"></a>
+                            </td>
+                            <td id="td38">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR38" class="infoR"></a>
+                            </td>
+                            <td id="td39">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR39" class="infoR"></a>
+                            </td>
+                            <td id="td40">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR40" class="infoR"></a>
+                            </td>
+                            <td id="td41">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR41" class="infoR"></a>
+                            </td>
+                            <td id="td42">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR42" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr7">
+                            <td id="td43">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR43" class="infoR"></a>
+                            </td>
+                            <td id="td44">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR44" class="infoR"></a>
+                            </td>
+                            <td id="td45">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR45" class="infoR"></a>
+                            </td>
+                            <td id="td46">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR46" class="infoR"></a>
+                            </td>
+                            <td id="td47">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR47" class="infoR"></a>
+                            </td>
+                            <td id="td48">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR48" class="infoR"></a>
+                            </td>
+                            <td id="td49">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR49" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr8">
+                            <td id="td50">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR50" class="infoR"></a>
+                            </td>
+                            <td id="td51">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR51" class="infoR"></a>
+                            </td>
+                            <td id="td52">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR52" class="infoR"></a>
+                            </td>
+                            <td id="td53">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR53" class="infoR"></a>
+                            </td>
+                            <td id="td54">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR54" class="infoR"></a>
+                            </td>
+                            <td id="td55">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR55" class="infoR"></a>
+                            </td>
+                            <td id="td56">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR56" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_tr9">
+                            <td id="td57">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR57" class="infoR"></a>
+                            </td>
+                            <td id="td58">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR58" class="infoR"></a>
+                            </td>
+                            <td id="td59">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR59" class="infoR"></a>
+                            </td>
+                            <td id="td60">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR60" class="infoR"></a>
+                            </td>
+                            <td id="td61">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR61" class="infoR"></a>
+                            </td>
+                            <td id="td62">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR62" class="infoR"></a>
+                            </td>
+                            <td id="td63">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR63" class="infoR"></a>
+                            </td>
+                        </tr>
+                        <tr id="crt_trx">
+                            <td id="td64">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR64" class="infoR"></a>
+                            </td>
+                            <td id="td65">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR65" class="infoR"></a>
+                            </td>
+                            <td id="td66">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR66" class="infoR"></a>
+                            </td>
+                            <td id="td67">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR67" class="infoR"></a>
+                            </td>
+                            <td id="td68">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR68" class="infoR"></a>
+                            </td>
+                            <td id="td69">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR69" class="infoR"></a>
+                            </td>
+                            <td id="td70">
+                                <input  class="tdWidth" type="checkbox" name="foo" value="bar" style="height: 30px;float:left;">
+                                <a id="infoR70" class="infoR"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="content_right_down">
+                <div id="content_right_down_top" style="width:100%;height: 30px;"></div>
+                <div id="content_right_middle" style="width:520px;height: 45px;margin:0 auto;">
+                    <div id="crm_left" onmousedown="changeImg1()" onmouseup="changeImg2()" onclick="visibleShade()">
+                        <img src="images/confirmB.png" id="myImg1"><a id="confirmS" style="font-size: 16px;color: #ff6765;">短信发送</a>
+                    </div>
+                    <div id="crm_right"  onmousedown="changeImg3()" onmouseup="changeImg4()">
+                        <img src="images/confirmB.png" ID="myImg2"><a id="confirmW" style="font-size: 16px;color: #ff6765;">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shade">
+
+    </div>
+    <div id="popupWindow">
+        <div id="pWindowCenter">
+            <div id="pwc_top">
+                <div id="pwct_a">
+                    <a style="font-size:17px;color:#757575;">短信发送</a>
+                </div>
+            </div>
+            <div id="pwc_center">
+                <div id="pwcc_left" style="width:95px;height: 18px;float:left;color:#33ff67;font-size:14px;">成功<a id="failedNum">25</a>条</div>
+                <div id="pwcc_right" style="width:60px;height: 18px;float:left;color:#484848;font-size:14px;">失败<a id="ScdNum">23</a>条</div>
+            </div>
+            <div id="pwc_bottom">
+                <div id="pwcb" style="width:150px;height:30px;cursor: pointer;" onmouseover="changePwccImgB()" onmouseout="changePwccImgA()" >
+                    <div id="pwcb_img" style="width:150px;height: 30px;"onclick="killShade()">
+                        <img src="images/CB.png" id="CB">
+                    </div>
+                    <div >
+                        <a style="color: #ff6765;font-size:15px;position:relative;top:-26px;left:60px;text-align: center;" id="pwcb_confirm" onclick ="killShade()">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
